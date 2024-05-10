@@ -32,8 +32,11 @@ class BaseSimc:
         self.active_enemy_buff_list = []
         for i in range(self.target_count):
             self.active_enemy_buff_list.append([])
+
         # 基础技能列表
         self.base_skill_list = []
+        # 当前技能冷却时间字典
+        self.skill_active_CD = {}
         # 当前技能优先级列表
         self.skill_priority_list = []
 
